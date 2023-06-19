@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>CCI Starter Kit | Welcome</title>
+    </head>
+    <body>
+        <div class="header">
+            <div id="logo">
+                <img src="images\College_ComputingInformatics-oneline100height.png" 
+                alt="Drexel CCI logo">
+            </div>
+            <h1>CCI GRADUATE STUDENT STARTER KIT</h1>
+        </div>
+        <div class="nav" id="navbar">
+            <div class="ul" id="ulbar">
+                <li><a href="javascript:void(0);" id="icon" onclick="respMenu()">&#9776;</a></li>
+                <li><a href="index.html" class="active">WELCOME</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="da.html">DEAN'S AMBASSADORS</a></li>
+                <li><a href="discord.html">DISCORD</a></li>
+                <li><a href="calendar.html">CALENDAR</a></li>
+                <li><a href="campus.html">CAMPUS</a></li>
+                <li><a href="advising.html">ADVISING</a></li>
+                <li><a href="checklist.html">CHECKLIST</a></li>
+            </div>
+        </div>
+        
+        <div class="middle">
+            <div class="leftcolumn">
+                <div class="card">
+                    <div class="gallerycontainer">
+                        <div class="slide">
+                            <img alt="CCI window"
+                            src="images/cciwindow.jpg">
+                            <div class="imgcaption">
+                                Source: Drexel University
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img alt="CCI lobby"
+                            src="images/ccilobby.jpg">
+                            <div class="imgcaption">
+                                Source: StradaLLC.com
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img alt="CCI Tables"
+                            src="images/ccitables.jpg">
+                            <div class="imgcaption">
+                                Source: StradaLLC.com
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img alt="CCI Hallway"
+                            src="images/ccihallway.jpg">
+                            <div class="imgcaption">
+                                Source: StradaLLC.com
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img alt="CCI Classroom"
+                            src="images/cciclassroom.jpg">
+                            <div class="imgcaption">
+                                Source: StradaLLC.com
+                            </div>
+                        </div>
+                        <a class="back" onclick="plusSlide(-1)">&#9668;</a>
+                        <a class="next" onclick="plusSlide(1)">&#9658;</a>
+                        <div class="gallerydots">
+                            <span class="dot" onclick="thisSlide(1)"></span>
+                            <span class="dot" onclick="thisSlide(2)"></span>
+                            <span class="dot" onclick="thisSlide(3)"></span>
+                            <span class="dot" onclick="thisSlide(4)"></span>
+                            <span class="dot" onclick="thisSlide(5)"></span>
+                        </div>
+                        <br>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h3>Welcome to CCI</h3>
+                    <p>This site is designed to welcome new 
+                        graduate students to the Drexel
+                        College of Computing and Informatics.
+                    </p>
+                    <p>
+                        Use this as your starter 
+                        kit for all things CCI!
+                    </p>
+                </div>
+                <div class="card">
+                    <h3></h3>
+                    <p>This site was made by Tina Shirasb
+                        for INFO 552: Introduction to Web Design.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="https://validator.w3.org/nu/?doc=https://cci.drexel.edu/~ts3532/portfolio/design.html">
+                <img src="images/html5.png"
+                alt="Valid HTML 5"
+                height="31">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=">
+                <img style="border:0;width:88px;height:31px"
+                src="images/css.png"
+                alt="Valid CSS!">
+            </a>
+        </div>
+        <script src="responsivemenu.js"></script>
+        <script src="checklist.js"></script>
+        <script src="gallery.js"></script>
+    </body>
+</html>

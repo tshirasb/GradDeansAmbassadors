@@ -1,0 +1,288 @@
+body {
+    font-family: Arial;
+    background-color: #07294D;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+.header {
+    text-align: center;
+    background-color: #07294D;
+    /* border: solid aqua; */
+    padding: 30px;
+    margin: none;
+    border: none;
+    color: #E1E1E0;
+    user-select: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h1{
+    padding-right: 10px;
+    padding-left: 20px;
+    /* background-color: red; */
+    font: 'futura_pt_condbold', Arial; 
+}
+
+#logo img{
+    width: 400px;
+    height: auto;
+    padding: 0px;
+    /* background-color: pink; */
+}
+
+/* gallery */
+.gallerycontainer {
+    padding: 0px;
+    max-width: 100%;
+    position: relative;
+}
+
+.slide img{
+    width: 100%;
+    height: auto;
+    padding: 0px;
+}
+
+.back{
+    padding: 80px 10px 80px 10px;;
+    margin: 0px;
+    color: white;
+    transition-duration: 0.2s;
+    font-weight: bold;
+    font-size: 35px;
+    user-select: none;
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+    left: 0%;
+}
+.next {
+    padding: 80px 10px 80px 10px;
+    margin: 0px;
+    color: white;
+    transition-duration: 0.2s;
+    font-weight: bold;
+    font-size: 35px;
+    user-select: none;
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+    right: 0%;
+}
+
+.back:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    padding: 10px;
+    margin: 5px;
+    background-color: darkgray;
+    border-radius: 50%;
+    display: inline-block;
+    transition-duration: 0.2s;
+}
+.imgcaption{
+    text-align: center;
+}
+.gallerydots {
+    position: absolute;
+    top: 96.5%;
+    left: 38.5%;
+    user-select: none;
+}
+
+.dot.active, .dot:hover {
+    background-color: grey;
+}
+
+#discordlogo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+}
+
+#discordlogo:hover {
+    box-shadow: 0 15px 15px 0 gray;
+}
+
+.invisible{
+    visibility:hidden;
+}
+
+#hiddentext {
+    display: none;
+}
+#donetext {
+    display: none;
+}
+
+.nav {
+    background-color: #07294D;
+    padding-bottom: 30px;
+    padding-left: 10px;
+}
+
+.ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content:flex-start;
+}
+
+li a {
+    transition-duration: 0.2s;
+    user-select: none;
+    text-decoration: none;
+    color: #E1E1E0;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 30px;
+
+}
+
+li a.active, li a:hover {
+    color: #FFC600;
+    border-bottom: 5px solid #FFC600;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 30px;
+}
+
+.middle {
+    display: flex;
+    flex-direction:row;
+    flex-grow: 0;
+    background-color: #07294D;
+    justify-content: center;
+    gap: 0px;
+}
+
+.leftcolumn , .rightcolumn{
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    gap: 0px;
+}
+
+.card {
+    background-color: #E1E1E0;
+    padding: 20px;
+    margin: 10px;
+    gap: 0px;
+    
+}
+
+h3 {
+    padding: 0px;
+}
+
+/* checklist */
+
+
+#checklist div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+
+#checklist > div > * {
+    align-self:auto;
+}
+
+.checkbox {
+    scale: 1.2;
+    margin-right: 10px;
+}
+
+
+
+.footer{
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+/* hide hamburger icon */
+@media screen and (min-width: 800px) {
+    #icon {
+      display: none;
+    }
+}
+
+/* show hamburger icon */
+@media screen and (max-width: 800px) {
+    #icon {
+      display: block;
+      float: left;
+    }
+}
+
+/* make header, pages fit in one column */
+@media screen and (max-width: 800px) {
+    .header {
+        flex-direction: column;
+        padding: 20px;
+        padding-bottom: 0px;
+    }
+    #logo img{
+        width: 300px;
+        height: auto;
+        padding: 0px;
+    }
+    h1 {
+        font-size: large;
+        padding-right: 0px;
+    }
+    .middle {
+      flex-direction: column;
+    }
+}
+
+/* make menu disappear except for active and hamburger icon */
+@media screen and (max-width: 800px) {
+    .ul li a:not(.active):not(#icon) {
+      display: none;
+    }
+
+    li a.active {
+        display: block;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-right: 30px;
+        color: #FFC600;
+    }
+}
+
+/* display links when hamburger is clicked */
+@media screen and (max-width: 800px) {
+    .ul.resp {
+      display: block;
+      float: none;
+    }
+    .ul.resp li a:not(#icon) {
+        display: block;
+        float: none;
+    }
+    #icon {
+        display: block;
+        float: none;
+    }
+}

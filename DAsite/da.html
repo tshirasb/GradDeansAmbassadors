@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>CCI Starter Kit | DA</title>
+    </head>
+    <body>
+        <div class="header">
+            <div id="logo">
+                <img src="images\College_ComputingInformatics-oneline100height.png" 
+                alt="Drexel CCI logo">
+            </div>
+            <h1>CCI GRADUATE STUDENT STARTER KIT</h1>
+        </div>
+        <div class="nav" id="navbar">
+            <div class="ul" id="ulbar">
+                <li><a href="javascript:void(0);" id="icon" onclick="respMenu()">&#9776;</a></li>
+                <li><a href="index.html">WELCOME</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="da.html" class="active">DEAN'S AMBASSADORS</a></li>
+                <li><a href="discord.html">DISCORD</a></li>
+                <li><a href="calendar.html">CALENDAR</a></li>
+                <li><a href="campus.html">CAMPUS</a></li>
+                <li><a href="advising.html">ADVISING</a></li>
+                <li><a href="checklist.html">CHECKLIST</a></li>
+            </div>
+        </div>
+        
+        <div class="middle">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h3>Who are the DAs?</h3>
+                    <p>
+                        Drexel's Graduate Dean's Ambassadors (DAs)
+                        are current graduate students in CCI.
+                        Their job is to welcome new students by sharing 
+                        their experiences and answering questions. 
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Contacting DAs</h3>
+                    <p>
+                        You can talk to a DA on the CCI official Discord by going to 
+                        "Graduate Programs" > ask-a-graduate-peer-mentor and 
+                        sending a message. There's always a DA available to chat!
+                    </p>
+                    <p>
+                        You can also contact DAs individually by email. 
+                        <a href="https://drexel.edu/cci/academics/masters-programs/graduate-deans-ambassadors/"
+                        target="_blank" rel="noopener noreferrer">
+                        Current DAs are listed here on the CCI website with 
+                        their email addresses. 
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h3>DA Finder</h3>
+                    
+                    <label for="majors">
+                        Select a major in the dropdown menu to find the DAs 
+                        in that program.
+                    </label>
+                    <select id="majors" name="majors">
+                        <option value="AI/ML">AI/ML</option>
+                        <option value="Business IT">Business IT</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Security & Privacy">Security & Privacy</option>
+                        <option value="Economics & CS">Economics & CS</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Health Informatics">Health Informatics</option>
+                        <option value="HCI/UX">HCI/UX</option>
+                        <option value="Information Systems">Information Systems</option>
+                        <option value="MSI">MSI</option>
+                        <option value="Software Engineering">Software Engineering</option>
+                    </select>
+                    <button type="button" class="button" id="majorbutton"
+                        onclick="getMajor()">
+                        Find DA
+                    </button>
+                    <p class="invisible" id="majorresult"></p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer">
+            <a href="https://validator.w3.org/nu/?doc=https://cci.drexel.edu/~ts3532/portfolio/design.html">
+                <img src="images/html5.png"
+                alt="Valid HTML 5"
+                height="31">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=">
+                <img style="border:0;width:88px;height:31px"
+                src="images/css.png"
+                alt="Valid CSS!">
+            </a>
+        </div>
+        <script src="responsivemenu.js"></script>
+        <script src="checklist.js"></script>
+        <script src="da.js"></script>
+    </body>
+</html>

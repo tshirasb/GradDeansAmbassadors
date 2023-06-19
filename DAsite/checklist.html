@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <title>CCI Starter Kit | Checklist</title>
+    </head>
+    <body>
+        <div class="header">
+            <div id="logo">
+                <img src="images\College_ComputingInformatics-oneline100height.png" 
+                alt="Drexel CCI logo">
+            </div>
+            <h1>CCI GRADUATE STUDENT STARTER KIT</h1>
+        </div>
+        <div class="nav" id="navbar">
+            <div class="ul" id="ulbar">
+                <li><a href="javascript:void(0);" id="icon" onclick="respMenu()">&#9776;</a></li>
+                <li><a href="index.html">WELCOME</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="da.html">DEAN'S AMBASSADORS</a></li>
+                <li><a href="discord.html">DISCORD</a></li>
+                <li><a href="calendar.html">CALENDAR</a></li>
+                <li><a href="campus.html">CAMPUS</a></li>
+                <li><a href="advising.html">ADVISING</a></li>
+                <li><a href="checklist.html" class="active">CHECKLIST</a></li>
+            </div>
+        </div>
+        
+        <div class="middle">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h3>What Checklist?</h3>
+                    <p>Below is the combined <a href="https://drexel.edu/cci/admissions/graduate-professional-development/accepted-graduate-students/"
+                    >Accepted Graduate Student Checklist</a> and
+                    <a href="https://drexel.edu/graduatecollege/news-events/orientation/New%20Student%20Resources/"
+                    >New Graduate Student Checklist</a> in one complete list!</p>
+                </div>
+                <div class="card" id="checklistcard">
+                    <h3>New Graduate Student Checklist</h3>
+                    <form id="checklist" onchange="storage()">
+                        <div>
+                            <input type="checkbox" class="checkbox" id="1">
+                            <label for="1">
+                                Confirm enrollment by 
+                                submitting tuition deposit through Discover Drexel
+                            </label><br>
+                        </div>  
+                        <div>
+                            <input type="checkbox" class="checkbox" id="2">
+                            <label for="2"> 
+                                Activate DrexelOne and Drexel email accounts
+                            </label><br>
+                        </div>  
+                        <div>
+                            <input type="checkbox" class="checkbox" id="3">
+                            <label for="3">
+                                Contact your Academic Advisor via email (once you 
+                                have received an email from iAdvising)
+                            </label><br>
+                        </div>  
+                        <div>    
+                            <input type="checkbox" class="checkbox" id="4">
+                            <label for="4">
+                                Register for classes
+                            </label><br>
+                        </div>  
+                        <div>    
+                            <input type="checkbox" class="checkbox" id="5">
+                            <label for="5">
+                                Check DrexelOne and Drexel Learn for course materials
+                            </label><br>
+                        </div>  
+                        <div>
+                            <input type="checkbox" class="checkbox" id="6">
+                            <label for="6">
+                                LIS students or members of library associations: 
+                                Contact advisor regarding Partner Organization 
+                                Tuition discount
+                            </label><br>
+                        </div>  
+                        <div>
+                            <input type="checkbox" class="checkbox" id="7">
+                            <label for="7">
+                                Optional, U.S. citizens and permanent residents:
+                                File FAFSA with school code 003256
+                            </label><br>
+                        </div>  
+                        <div>
+                            <input type="checkbox" class="checkbox" id="8">
+                            <label for="8">
+                                On-campus students:
+                                Fulfill all University immunization requirements.
+                            </label><br>
+                        </div>  
+                        <div>
+                            <input type="checkbox" class="checkbox" id="9">
+                            <label for="9">
+                                Full-time and international students: 
+                                Enroll in or waive the Drexel Health Insurance Plan
+                            </label><br>
+                        </div>  
+                        <div>
+                            <input type="checkbox" class="checkbox" id="10">
+                            <label for="10">
+                                Complete and monitor any outstanding 
+                                financial aid and billing requirements on DrexelOne
+                            </label><br>
+                        </div>  
+                        <div>
+                            <input type="checkbox" class="checkbox" id="11">
+                            <label for="11">
+                                Notify the Office of Graduate Admissions of 
+                                changes in your enrollment status prior to  
+                                first day of classes at enroll@drexel.edu
+                            </label><br>
+                        </div>  
+                        <div>
+                            <input type="checkbox" class="checkbox" id="12">
+                            <label for="12">
+                                Submit any outstanding official documents, 
+                                including final transcripts, to Office of Admissions.
+                                Transcripts can be emailed directly from your 
+                                institution to enroll@drexel.edu
+                            </label><br>
+                        </div>  
+                        <div>
+                            <input type="checkbox" class="checkbox" id="13">
+                            <label for="13">
+                                On-campus students: Get your Drexel ID aka Dragoncard.
+                                Follow instructions on 
+                                <a href="https://drexel.edu/business-services/dragoncard/get-a-card/"
+                                target="_blank" rel="noopener noreferrer">
+                                the Drexel Dragoncard Webpage</a>
+                            </label><br>
+                        </div>  
+                        <div>
+                            <input type="checkbox" class="checkbox" id="14">
+                            <label for="14">
+                                International students: 
+                                Provide completed I-20 and required bank documents
+                            </label><br>
+                        </div>  
+                        <div>
+                            <input type="checkbox" class="checkbox" id="15">
+                            <label for="15">
+                                If needed, contact the 
+                                <a href="https://drexel.edu/disability-resources/" target="_blank" rel="noopener noreferrer">
+                                    Office of Disability Resources
+                                </a>
+                                for disability accommodations
+                            </label><br>
+                        </div>  
+                        <div>
+                            <input type="checkbox" class="checkbox" id="16">
+                            <label for="16">
+                                Complete online Title IX Training
+                            </label><br>
+                        </div>  
+                        <div>
+                            <input type="checkbox" class="checkbox" id="17">
+                            <label for="17">
+                                Check the 
+                                <a href="https://drexel.edu/provost/policies-calendars/academic-calendars/"
+                                target="_blank" rel="noopener noreferrer">
+                                Drexel Academic Calendar</a>
+                                for important dates
+                            </label><br>
+                        </div>  
+                        <div>
+                            <input type="checkbox" class="checkbox" id="18">
+                            <label for="18">
+                                Review the <a href="https://drexel.edu/studentlife/community-standards/code-of-conduct"
+                                target="_blank" rel="noopener noreferrer">Student Code of Conduct</a>
+                            </label><br>
+                        </div>  
+                        <div>
+                            <input type="checkbox" class="checkbox" id="19">
+                            <label for="19">
+                                Familiarize yourself with the
+                                <a href="https://drexel.edu/studentlife/activities-involvement/first-year-experience/what-to-expect/new-student-resources"
+                                target="_blank" rel="noopener noreferrer">
+                                New Student Resources site</a>
+                            </label><br>
+                        </div>  
+                        <div>
+                            <input type="checkbox" class="checkbox" id="20">
+                            <label for="20">
+                                Browse <a href="https://drexel.campuslabs.com/engage/"
+                                target="_blank" rel="noopener noreferrer">Dragonlink</a>
+                                for student organizations and events
+                            </label><br>
+                        </div>  
+                        <div>
+                            <button type="button" class="button" id="savebutton" onclick="checkdone(); save()">
+                                Save Progress
+                            </button>
+                        </ul>
+                    </form> 
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h3>Checklist completion tracker:</h3>
+                    <div id="hiddentext">
+                        Your progress: 
+                        <div id="progress-bar"></div>
+                    </div> 
+                    <p id="donetext">
+                        Great work! You finished the
+                        <b>New Graduate Student Checklist!</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="https://validator.w3.org/nu/?doc=https://cci.drexel.edu/~ts3532/portfolio/design.html">
+                <img src="images/html5.png"
+                alt="Valid HTML 5"
+                height="31">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=">
+                <img style="border:0;width:88px;height:31px"
+                src="images/css.png"
+                alt="Valid CSS!">
+            </a>
+        </div>
+        <script src="responsivemenu.js"></script>
+        <script src="checklist.js"></script>
+    </body>
+</html>
